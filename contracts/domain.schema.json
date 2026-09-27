@@ -7,7 +7,10 @@
     "version",
     "sample_id",
     "actors",
+    "content_types",
     "facts",
+    "workflow",
+    "change_events",
     "constraints"
   ],
   "properties": {
@@ -30,7 +33,28 @@
         "type": "string"
       }
     },
+    "content_types": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
     "facts": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "workflow": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "change_events": {
       "type": "array",
       "minItems": 2,
       "items": {
